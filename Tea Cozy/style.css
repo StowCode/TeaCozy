@@ -1,37 +1,80 @@
+
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-
-html {
-    font-family: Helvetica;
-    font-size: 22px;
-    color: seashell;
-    background-color: black;
-    opacity: 0.9;
+body{
+    text-align: center;
 }
 
-.navbar {
-    height: 69px;
-    border-bottom: 1px solid seashell;
-    display: inline-flex;
+.wrapper{
+    width: 1170px;
+    margin: 0 auto;
+}
+
+header{
+    height: 100px;
+    background: black;
     width: 100%;
-    padding-top: 20px;
+    z-index:12;
+    border-bottom: 1px solid white;
 }
 
-.navlinks {
-    display: -webkit-flex;
-    flex: 1;
-    justify-content: flex-end;
-    justify-content: space-between;
-    list-style: none;
+.logo{
+    margin-left: 30px;
+    float: left;
+    line-height: 100px;
+}
+
+.logo a{
+    text-decoration: none;
+    font-size: 30px;
+    font-family: Helvetica;
     color: white;
-    
 }
 
+nav{
+    float: right;
+    line-height: 100px;
+}
 
+nav a{
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 0 10px;
+    color: seashell;
+}
 
+.banner-area{
+    width: 100%;
+    height: 700px;
+    background-image: url(images/img-mission-background.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+}
 
+.banner-area h4{
+    position: relative;
+    font-size: 22px;
+    color: white;
+    top: 200px;
+    background:black;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
 
+.content-area{
+    width: 100%;
+    position: relative;
+    top: 450px;
+    background: #ddd;
+    height: 1500px;
+}
+
+.teaofthemonth h2{
+    font-size:70px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
