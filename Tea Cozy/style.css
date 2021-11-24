@@ -2,6 +2,7 @@
 * {
     margin: 0;
     padding: 0;
+    color: seashell;
 }
 
 body{
@@ -9,7 +10,7 @@ body{
 }
 
 .wrapper{
-    width: 1170px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -24,19 +25,19 @@ header{
 .logo{
     margin-left: 30px;
     float: left;
-    line-height: 100px;
+    margin-top: 30px;
 }
 
 .logo a{
     text-decoration: none;
     font-size: 30px;
     font-family: Helvetica;
-    color: white;
+    color:seashell;
 }
 
 nav{
     float: right;
-    line-height: 100px;
+    margin-top: 37px;
 }
 
 nav a{
@@ -56,11 +57,23 @@ nav a{
     background-position: center;
 }
 
+.banner-area h2{
+    position: relative;
+    font-size: 60px;
+    color:seashell;
+    top: 200px;
+    background:black;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-transform: uppercase;
+}
+
 .banner-area h4{
     position: relative;
     font-size: 22px;
-    color: white;
+    color:seashell;
     top: 200px;
+    padding-bottom: 10px;
     background:black;
     text-align: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -74,7 +87,100 @@ nav a{
     height: 1500px;
 }
 
+.teaofthemonth{
+    background-color: black;
+    padding: 30px;
+}
+
 .teaofthemonth h2{
-    font-size:70px;
+    font-size:45px;
+    text-transform: uppercase;
+    margin-top: 40px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
+.teaofthemonth h4{
+    font-size: 22px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.container {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    background-color: black;
+}
+
+.tile {
+    display: flex;
+    width: 300px;
+    height: 200px;
+    flex-flow: column;
+    align-items: center;
+}
+
+.tile img{
+    width: 200px;
+}
+
+.tile h4 {
+    font-size: 20px;
+}
+
+/*Locations*/
+
+.locationsbanner{
+    width: 100%;
+    height: 500px;
+    background-position: center;
+    background-image: url(Images/img-locations-background.jpg);
+    background-size: cover;
+    -webkit-background-size: cover;
+    background-position: center;
+}
+
+#locations {
+    font-size: 35px;
+    text-transform: uppercase;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.locationscontainer{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.tile{
+    list-style: none;
+    font-size: 20px;
+    background-color: rgba(0,0,0,.7);
+    line-height: 50px;
+    border-radius: 5px;
+    width: 250px;
+    height: auto;
+    padding: 20px 0px;
+}
+
+.tile h3{
+    text-transform: uppercase;
+}
+/* footer */
+
+footer{
+    background-color: black;
+    padding: 50px;
+    line-height: 30px;
+}
+
+footer h5{
+    font-size: 16px;
+}
+
+.copyright {
+    float: left;
+}
+
+
